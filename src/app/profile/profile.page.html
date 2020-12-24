@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Profile
+    </ion-title>
+    <ion-icon slot="end" name="more" size="large" (click)="presentPopover($event)"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-avatar class="profile-pic">
+    <ion-img src="assets/icon/Profile.jpg"></ion-img>
+  </ion-avatar>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>{{user?.email}}</ion-card-subtitle>
+      <ion-card-title>{{user?.name}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+</ion-content>
